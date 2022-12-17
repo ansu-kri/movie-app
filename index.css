@@ -37,6 +37,7 @@ body {
     flex: 4;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 #lhs h4 {
@@ -51,9 +52,11 @@ body {
     
 }
 #rhs>a>button{
-    padding: 15px;
-    width: 300px;
+    padding: 12px;
+    width: 200px;
     cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
 #log{
     margin-right: 50px;
@@ -63,4 +66,14 @@ body {
 #log>a{
     color: #fff;
     text-decoration: none;
+}
+#slider{
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+#slider>img{
+    width: 100%;
+    height: 400px;
 }

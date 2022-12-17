@@ -13,7 +13,7 @@ let Navbar=()=>{
             <a href="search.html"><button>Search Movies</button></a>
         </div>
         <div id=log>
-             <a href="">Login</a>
+             <a href="">LOGIN</a>
         </div>
     </div>
     `

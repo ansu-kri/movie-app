@@ -1,3 +1,27 @@
+// for slider
+let slideShow=()=>{
+    const arr=['https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4292/754292-h','https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4252/1364252-h-e470328888ed','https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2978/1432978-h-90572dd255c9','https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9476/1429476-h-fb7ceee122b4','https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1259/1431259-h-248b69674bff']
+
+    let i=0;
+    let div=document.getElementById("slider");
+    let img=document.createElement("img");
+    img.src=arr[0];
+    div.append(img);
+    i=i+1;
+    setInterval(()=>{
+        if(i==5){
+            i=0;
+        }
+        img.src=arr[i];
+        i=i+1;
+        div.append(img);
+    },2000)
+}
+slideShow()
+
+
+
+
 const movies = [
     {
         name: "MS Dhoni",
