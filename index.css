@@ -77,3 +77,43 @@ body {
     width: 100%;
     height: 400px;
 }
+#latest h2{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#Latests{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+    width: 95%;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 20px;
+}
+#Latests>div{
+    width: 100%;
+    margin: auto;
+    height: auto;
+
+}
+#Latests>div>img{
+    width: 100%;
+}
+#bests{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+    width: 95%;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 20px;
+}
+#bests>div{
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+#bests>div>img{
+    width: 100%;
+}
