@@ -87,27 +87,103 @@ body {
     grid-template-columns: repeat(7,1fr);
     gap: 10px;
     width: 95%;
-    border: 1px solid red;
+    height: 200px;
+    border: 0px solid red;
     margin: auto;
     margin-top: 20px;
 }
 #Latests>div{
     width: 100%;
     margin: auto;
-    height: auto;
+    height: 200px;
+    cursor: pointer;
 
 }
 #Latests>div>img{
     width: 100%;
 }
-#bests{
+#Latests>div>img:hover{
+    width: 105%;
+}
+#popular>h2{
+    color: #fff;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+#show{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     gap: 10px;
     width: 95%;
-    border: 1px solid white;
+    margin: auto;
+    border: 0px solid red;
+    margin-top: 20px;
+}
+#show>div>img{
+    width: 100%;
+    cursor: pointer;
+}
+#show>div>img:hover{
+    width: 105%;
+}
+#best{
+    width: 99%;
+    margin: auto;
+    border: 0px solid red;
+    /* margin-top: 20px; */
+}
+#channel>h2{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#channels{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 20px;
+    width: 95%;
+    height: 200px;
+    border: 0px solid red;
     margin: auto;
     margin-top: 20px;
+    cursor: pointer;
+}
+#channels>div{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    cursor: pointer;
+
+}
+#channels>div>img{
+    width: 100%;
+}
+#channels>div:hover{
+    width: 110%;
+}
+#hotstart{
+    display: flex;
+    width: 95%;
+}
+.hotstar_img{
+    width: 10%;
+    border: 0px solid red;
+}
+.hotstar_img>img{
+    width: 100%;
+    margin-top: 70px;
+    margin-left: 80px;
+}
+#bests{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+    width: 100%;
+    border: 0px solid white;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 70px;
+    cursor: pointer;
 }
 #bests>div{
     width: 100%;
@@ -116,4 +192,10 @@ body {
 }
 #bests>div>img{
     width: 100%;
+}
+
+.special{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 40px;
 }
