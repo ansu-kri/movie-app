@@ -8,19 +8,24 @@ body {
     background: linear-gradient(to bottom, #192133, #111826);
 }
 
-#movies {
+#movie {
     display: inline-grid;
     grid-template-columns: 25% 25% 25% 25%;
     /* width: 30%; */
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+    gap: 10px;
 }
 
-#movies div {
+#movie div {
     display: grid;
+    
     margin-bottom: 10%;
     justify-items: center;
+}
+#movie div img{
+    width: 100%;
 }
 
 #navbar {
