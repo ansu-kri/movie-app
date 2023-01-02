@@ -11,16 +11,18 @@ body {
 #movie {
     display: inline-grid;
     grid-template-columns: 25% 25% 25% 25%;
-    /* width: 30%; */
-    margin-left: 10%;
+    width: 90%;
+    margin: auto;
+    /* margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 5%; */
     gap: 10px;
 }
 
 #movie div {
     display: grid;
-    
+    margin: auto;
+    margin-left: 50px;
     margin-bottom: 10%;
     justify-items: center;
 }
@@ -203,4 +205,25 @@ body {
     color: #fff;
     margin-top: 20px;
     margin-left: 40px;
+}
+
+/* //search   */
+
+#movies {
+    display: inline-grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* width: 30%; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    gap: 10px;
+}
+
+#movies div {
+    display: grid;
+    margin-bottom: 10%;
+    justify-items: center;
+}
+#movies div img{
+    width: 100%;
 }

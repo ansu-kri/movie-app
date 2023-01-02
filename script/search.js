@@ -134,7 +134,7 @@ let arr=JSON.parse(localStorage.getItem("details"))||[]
 function appendMovies(data){
 
     let data_div=document.getElementById('movies');
-    // data_div.innerHTML=null;
+    data_div.innerHTML=null;
 
     data.forEach(function(el){
 
