@@ -109,3 +109,81 @@ function display(movies) {
    
 }
 display(movies)
+
+
+//search
+
+let id;
+
+async function searchMovies(){
+    let query=document.getElementById("query").value;
+
+    let response=await fetch(`http://www.omdbapi.com/?apikey=46a21295&s=${query}`)
+
+    let data =await response.json();
+    console.log(data.Search)
+    appendMovies(data.Search);
+}
+
+function constructor(title,poster,year){
+    this.title=title;
+    this.poster=poster;
+    this.year=year;
+}
+let arr=JSON.parse(localStorage.getItem("details"))||[]
+function appendMovies(data){
+
+    let data_div=document.getElementById('movies');
+    // data_div.innerHTML=null;
+
+    data.forEach(function(el){
+
+        let div=document.createElement('div');
+
+        let name=document.createElement('p');
+        name.innerHTML=`Name: ${el.Title}`;
+
+        let year=document.createElement('p');
+        year.innerHTML=`Year: ${el.Year}`;
+
+        let img=document.createElement("img");
+        img.src=el.Poster;
+        img.id="Poster";
+
+        let button=document.createElement("button")
+        button.innerHTML="get details"
+        button.addEventListener("click",function(){
+
+            let obj=new constructor(el.Title,el.Poster,el.Year);
+            arr.push(obj);
+            localStorage.setItem("details",JSON.stringify(arr));
+        })
+
+        div.append(img,name,year,button)
+
+        data_div.append(div);
+    })
+}
+
+async function search(){
+    let query=document.getElementById("query").value;
+
+    let response=await fetch(`http://www.omdbapi.com/?apikey=46a21295&s=${query}`)
+
+    let data =await response.json();
+    console.log(data.Search)
+    appendMovies(data.Search);
+}
+
+
+
+function debouncing(func,delay){
+
+    if(id){
+        clearTimeout(id)
+    }
+    id=setTimeout(function(){
+        func();
+    },delay)
+}
+

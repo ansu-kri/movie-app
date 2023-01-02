@@ -11,6 +11,11 @@
 </head>
 <body>
     <div id="navbars"></div>
+    <div>
+        <!-- <input type="text" id="query">
+        <button onclick="searchMovies()">Search</button> -->
+        search movies: <input oninput="debouncing(search,500)"id="query">
+    </div>
     <div id="movie"></div>
     <div id="footer"></div>
 </body>
