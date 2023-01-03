@@ -227,3 +227,8 @@ body {
 #movies div img{
     width: 100%;
 }
+span{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
